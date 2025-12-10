@@ -1,0 +1,22 @@
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Java
+java/bin/
+java/build/
+java/out/
+java/target/
+java/*.class
+java/*.jar
+
+# C# / .NET
+csharp/bin/
+csharp/obj/
+csharp/*.user
+csharp/*.suo
+csharp/*.log
+csharp/.vs/
+csharp/packages/
