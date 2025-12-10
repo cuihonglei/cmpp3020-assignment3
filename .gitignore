@@ -9,8 +9,8 @@ java/bin/
 java/build/
 java/out/
 java/target/
-java/**/*.class
-java/**/*.jar
+java/*.class
+java/*.jar
 
 # C# / .NET
 csharp/bin/
