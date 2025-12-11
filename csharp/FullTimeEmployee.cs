@@ -1,9 +1,12 @@
 using System;
+using System.Text.Json.Serialization;
 
 [Serializable]
 public abstract class FullTimeEmployee : Employee
 {
+    [JsonInclude]
     private double BaseSalary { get; set; }
+    [JsonInclude]
     private string BenefitsPackage { get; set; }
 
     protected FullTimeEmployee() { }

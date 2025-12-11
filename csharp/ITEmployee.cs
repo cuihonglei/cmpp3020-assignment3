@@ -1,8 +1,10 @@
 using System;
+using System.Text.Json.Serialization;
 
 [Serializable]
 public class ITEmployee : FullTimeEmployee
 {
+    [JsonInclude]
     private string Specialization { get; set; }
 
     public ITEmployee() : base() { }

@@ -1,10 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 [Serializable]
 public class FullTimeInstructor : FullTimeEmployee
 {
+    [JsonInclude]
     private string Rank { get; set; }
+    [JsonInclude]
     private List<string> CoursesTaught { get; set; }
 
     public FullTimeInstructor() : base() { }

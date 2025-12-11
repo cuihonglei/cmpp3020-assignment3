@@ -55,7 +55,7 @@ public abstract class Employee
 
     public string GetFullName() => $"{FirstName} {LastName}";
 
-    public virtual double GetPaid()
+    public double GetPaid()
     {
         double monthlyPay = GetAnnualSalary() / 12;
         Console.WriteLine($"{GetFullName()}'s monthly pay is: {monthlyPay}");
