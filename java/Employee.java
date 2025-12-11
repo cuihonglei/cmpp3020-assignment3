@@ -12,9 +12,9 @@ public abstract class Employee implements Serializable {
     public Date dateOfBirth;
     public String position;
     public String department;
-    
+
     // Make manager transient to avoid circular reference issues
-    protected transient Employee manager;
+    public transient Employee manager;
 
     // Global map: department -> allowed positions
     private static final Map<String, List<String>> departmentPositions = new HashMap<>();
