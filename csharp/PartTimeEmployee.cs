@@ -3,8 +3,8 @@ using System;
 [Serializable]
 public abstract class PartTimeEmployee : Employee
 {
-    public double HourlyRate { get; set; }
-    public int HoursPerWeek { get; set; }
+    private double HourlyRate { get; set; }
+    private int HoursPerWeek { get; set; }
 
     protected PartTimeEmployee() { }
 

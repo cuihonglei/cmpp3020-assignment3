@@ -1,8 +1,8 @@
 import java.util.Date;
 
 public abstract class FullTimeEmployee extends Employee {
-    protected double baseSalary;
-    protected String benefitsPackage;
+    private double baseSalary;
+    private String benefitsPackage;
 
     public FullTimeEmployee(String id, String firstName, String lastName, Date dob,
             String position, String department, double baseSalary, String benefits) throws InvalidDataException {

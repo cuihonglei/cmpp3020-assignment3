@@ -4,8 +4,8 @@ using System.Collections.Generic;
 [Serializable]
 public class FullTimeInstructor : FullTimeEmployee
 {
-    public string Rank { get; set; }
-    public List<string> CoursesTaught { get; set; }
+    private string Rank { get; set; }
+    private List<string> CoursesTaught { get; set; }
 
     public FullTimeInstructor() : base() { }
 

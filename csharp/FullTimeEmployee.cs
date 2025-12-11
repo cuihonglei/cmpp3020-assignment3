@@ -3,8 +3,8 @@ using System;
 [Serializable]
 public abstract class FullTimeEmployee : Employee
 {
-    public double BaseSalary { get; set; }
-    public string BenefitsPackage { get; set; }
+    private double BaseSalary { get; set; }
+    private string BenefitsPackage { get; set; }
 
     protected FullTimeEmployee() { }
 

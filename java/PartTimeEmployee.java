@@ -1,8 +1,8 @@
 import java.util.Date;
 
 public abstract class PartTimeEmployee extends Employee {
-    protected double hourlyRate;
-    protected int hoursPerWeek;
+    private double hourlyRate;
+    private int hoursPerWeek;
 
     public PartTimeEmployee(String id, String firstName, String lastName, Date dob,
             String position, String department, double hourlyRate, int hours) throws InvalidDataException {

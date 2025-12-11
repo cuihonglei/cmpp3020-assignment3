@@ -3,7 +3,7 @@ using System;
 [Serializable]
 public class ITEmployee : FullTimeEmployee
 {
-    public string Specialization { get; set; }
+    private string Specialization { get; set; }
 
     public ITEmployee() : base() { }
 
