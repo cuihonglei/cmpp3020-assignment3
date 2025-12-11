@@ -4,7 +4,7 @@ using System.Collections.Generic;
 [Serializable]
 public class Manager : FullTimeEmployee
 {
-    public List<Employee> ManagedEmployees { get; set; }
+    public List<Employee>? ManagedEmployees { get; set; }
 
     public Manager() : base() { }
 

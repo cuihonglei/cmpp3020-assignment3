@@ -12,12 +12,12 @@ using System.Text.Json.Serialization;
 [JsonDerivedType(typeof(PayrollEmployee), typeDiscriminator: "payroll")]
 public abstract class Employee
 {
-    public string Id { get; set; }
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
+    public string? Id { get; set; } = string.Empty;
+    public string? FirstName { get; set; } = string.Empty;
+    public string? LastName { get; set; } = string.Empty;
     public DateTime DateOfBirth { get; set; }
-    public string Position { get; set; }
-    public string Department { get; set; }
+    public string? Position { get; set; }
+    public string? Department { get; set; }
 
     // Manager reference (transient equivalent not needed in C# serialization unless using BinaryFormatter)
     public Employee? Manager { get; set; }

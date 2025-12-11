@@ -28,8 +28,8 @@ class Program
             adminEmployee.Manager = managerAdmin;
             partTimer.Manager = managerIT;
 
-            managerIT.ManagedEmployees.AddRange(new List<Employee>{ instructor, payroll, itEmployee, partTimer });
-            managerAdmin.ManagedEmployees.Add(adminEmployee);
+            managerIT.ManagedEmployees?.AddRange(new List<Employee>{ instructor, payroll, itEmployee, partTimer });
+            managerAdmin.ManagedEmployees?.Add(adminEmployee);
 
             // ---------------------- Demonstrate Employee Actions ----------------------
             Console.WriteLine("---- Employee Annual Salaries ----");

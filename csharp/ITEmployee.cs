@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 public class ITEmployee : FullTimeEmployee
 {
     [JsonInclude]
-    private string Specialization { get; set; }
+    private string? Specialization { get; set; }
 
     public ITEmployee() : base() { }
 

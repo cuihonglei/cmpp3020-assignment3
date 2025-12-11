@@ -5,7 +5,7 @@ using System.Text.Json.Serialization;
 public class AdminEmployee : FullTimeEmployee
 {
     [JsonInclude]
-    private string Clearance { get; set; }
+    private string? Clearance { get; set; }
 
     public AdminEmployee() : base() { }
 

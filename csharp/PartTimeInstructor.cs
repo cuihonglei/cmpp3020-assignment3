@@ -6,9 +6,9 @@ using System.Text.Json.Serialization;
 public class PartTimeInstructor : PartTimeEmployee
 {
     [JsonInclude]
-    private string Rank { get; set; }
+    private string? Rank { get; set; }
     [JsonInclude]
-    private List<string> CoursesTaught { get; set; }
+    private List<string>? CoursesTaught { get; set; }
 
     public PartTimeInstructor() : base() { }
 
