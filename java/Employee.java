@@ -60,6 +60,13 @@ public abstract class Employee implements Serializable {
         return monthlyPay;
     }
 
+    // Overloaded method - static binding example (method overloading)
+    public double getPaid(int months) {
+        double customPay = getAnnualSalary() / 12 * months;
+        System.out.println(getFullName() + "'s pay for " + months + " months is: " + customPay);
+        return customPay;
+    }
+
     public abstract double getAnnualSalary();
 
     public abstract void reportToManager();

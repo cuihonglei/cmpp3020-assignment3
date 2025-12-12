@@ -39,6 +39,10 @@ class Program
             Console.WriteLine($"{adminEmployee.GetFullName()}: ${adminEmployee.GetAnnualSalary()}");
             Console.WriteLine($"{partTimer.GetFullName()}: ${partTimer.GetAnnualSalary()}");
 
+            Console.WriteLine("\n---- Static Binding: Method Overloading ----");
+            instructor.GetPaid();       // Calls GetPaid() - no parameters
+            instructor.GetPaid(6);      // Calls GetPaid(int) - overloaded version
+
             Console.WriteLine("\n---- Reporting to Managers ----");
             instructor.ReportToManager();
             payroll.ReportToManager();
@@ -64,8 +68,15 @@ class Program
             adminEmployee.ShowClearance();
 
             Console.WriteLine("\n---- Payroll Deductions ----");
-            payroll.CalculateDeductions(instructor.GetAnnualSalary());
-            payroll.CalculateDeductions(payroll.GetAnnualSalary());
+            try
+            {
+                payroll.CalculateDeductions(instructor.GetAnnualSalary());
+                payroll.CalculateDeductions(payroll.GetAnnualSalary());
+            }
+            catch (MathOperationException e)
+            {
+                Console.WriteLine($"Payroll error: {e.Message}");
+            }
 
             // ---------------------- Employee Management System ----------------------
             EmployeeManagementSystem ems = new EmployeeManagementSystem();

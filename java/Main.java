@@ -61,6 +61,10 @@ public class Main {
             System.out.println(adminEmployee.getFullName() + ": $" + adminEmployee.getAnnualSalary());
             System.out.println(partTimer.getFullName() + ": $" + partTimer.getAnnualSalary());
 
+            System.out.println("\n---- Static Binding: Method Overloading ----");
+            instructor.getPaid();       // Calls getPaid() - no parameters
+            instructor.getPaid(6);      // Calls getPaid(int) - overloaded version
+
             System.out.println("\n---- Reporting to Managers ----");
             instructor.reportToManager();
             payroll.reportToManager();

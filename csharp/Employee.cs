@@ -62,6 +62,14 @@ public abstract class Employee
         return monthlyPay;
     }
 
+    // Overloaded method - static binding example (method overloading)
+    public double GetPaid(int months)
+    {
+        double customPay = GetAnnualSalary() / 12 * months;
+        Console.WriteLine($"{GetFullName()}'s pay for {months} months is: {customPay}");
+        return customPay;
+    }
+
     public abstract double GetAnnualSalary();
 
     public abstract void ReportToManager();
